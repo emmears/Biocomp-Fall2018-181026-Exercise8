@@ -11,4 +11,8 @@
 UWvsMSU = read.table("UWvMSU_1-22-13.txt",header=T,)
 head(UWvsMSU)
 UW= UWvsMSU[which(UWvsMSU$team == "UW"),]
-plot(UWvsMSU$time,UWvsMSU$score, type = "l")
+for (i in UW){
+  cumm = UW$score[i]+UW$score[i-1]
+  }
+return(cumm)
+plot(UW$time,UW$score, type = "l")

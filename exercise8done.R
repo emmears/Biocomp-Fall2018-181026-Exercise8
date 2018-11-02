@@ -42,8 +42,13 @@ lines(time,cumm, col = "blue")
    #how to get input from the user 
 #. sample() is a function that allows for a random selection
    #from a vector containing a set of integers 
+##Guess My Number Game##
+#How to Play: 
+#run this to set your random number 1-100 
 num = sample(1:100)
-guess = 50
+#type in your first guess for what you think the random number is and run it
+guess = 18
+#then test to find out if you got the number correct
 if(guess == num){
   print("Correct!")
 }else if (guess > num){
@@ -51,5 +56,7 @@ if(guess == num){
 }else{
   print("Higher")
 }
-
-
+#if correct, then you win! 
+#if higher, then you must change your guess value to be higher and run lines 50-58 again 
+#if lower, then you must change your guess value to be lower and run lines 50-58 again 
+#keep playing until you win!!! 

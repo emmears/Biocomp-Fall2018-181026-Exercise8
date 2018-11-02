@@ -19,11 +19,11 @@ MSU = UWvsMSU[which(UWvsMSU$team == "MSU"),]
 #fill cumullative score columns 
 UW$cummulativescore = cumsum(UW$score)
 MSU$cummulativescore = cumsum(MSU$score)
-#plot UW
+#plot UW (black) 
 Time = UW$time
 Cumm = UW$cummulativescore
 plot(Time, Cumm,type = "l")
-#plot MSU 
+#plot MSU (blue)
 time =MSU$time
 cumm =MSU$cummulativescore
 lines(time,cumm, col = "blue")
@@ -42,6 +42,8 @@ lines(time,cumm, col = "blue")
    #how to get input from the user 
 #. sample() is a function that allows for a random selection
    #from a vector containing a set of integers 
+
+
 ##Guess My Number Game##
 #How to Play: 
 #run this to set your random number 1-100 
